@@ -14,16 +14,16 @@ namespace Day2_1_Project
                 Console.WriteLine("How many days of leave do you want?");
                 int leave = int.Parse(Console.ReadLine());
 
-                if(leave > 7)
+                if (leave > 7)
                 {
                     Console.WriteLine("You can not request for leave");
                 }
-                else
+                else if (1 < leave & leave < 7)
                 {
                     Console.WriteLine("You may request for leave");
                 }
             }
-        catch
+         catch
             {
                 Console.WriteLine("you have an error");
             }
